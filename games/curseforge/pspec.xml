@@ -10,7 +10,7 @@
         <Summary>The CurseForge Electron App</Summary>
         <Description>The CurseForge Electron App</Description>
         <License>Copyright (c) 2025 Overwolf. All rights reserved.</License>
-        <Archive sha1sum="4ac102f3bc7bbcb3a2648013320ac3126d941ce0" type="binary">https://curseforge.overwolf.com/downloads/curseforge-latest-linux.deb</Archive>
+        <Archive sha1sum="02d77b1d63eb49d78bd69e73bcd4c498978c97a4" type="binary">https://curseforge.overwolf.com/downloads/curseforge-latest-linux.deb</Archive>
 
         <BuildDependencies>
             <Dependency>binutils</Dependency>
