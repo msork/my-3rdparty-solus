@@ -8,7 +8,7 @@ mkdir -p ~/Downloads/librewolf-updater
 cd ~/Downloads/librewolf-updater
 
 # DOWNLOAD DEB AND EXTRACT VERSION
-wget 'https://repo.librewolf.net/pool/'$FILE -O $FILE.deb
+wget 'https://repo.librewolf.net/pool/'$FILE -O $FILE
 ar xf $FILE
 tar -xvf control.tar.xf
 VERSION=$(sed -n 12p control | grep -Po '(?<=Version: )\d+(?:\.\d+)*' | cut -d'-' -f1)
