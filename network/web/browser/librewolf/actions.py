@@ -12,7 +12,7 @@ Suffix = "-1"
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf librewolf-%s%s-linux-x86_64-deb" % (get.srcVERSION(), Suffix))
+    shelltools.system("ar xf librewolf-%s%s-linux-x86_64-deb.deb" % (get.srcVERSION(), Suffix))
     shelltools.system("tar xvf data.tar.xz")
 
 def install():

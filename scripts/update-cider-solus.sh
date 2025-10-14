@@ -24,7 +24,7 @@ chmod +x ep-update.py
 ./ep-update.py $VERSION https://repo.cider.sh/apt/pool/main/$FILE
 
 # BUILD AND INSTALL EOPKG
-sudo eopkg bi --ignore-safety pspec.xml
+sudo eopkg.py3 bi --ignore-safety pspec.xml
 sudo eopkg it -y ./*.eopkg
 
 # REMOVE FILES
