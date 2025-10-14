@@ -27,6 +27,10 @@ chmod +x ep-update.py
 sudo eopkg.py3 bi --ignore-safety pspec.xml
 sudo eopkg it -y ./*.eopkg
 
+# UPDATE PSPEC.XML
+cp ./pspec.xml $SCRIPTS/../multimedia/music/cider/pspec.xml
+echo "REMEMBER TO git add . -> git commit -m 'Updated cider' -> git push -u origin master"
+
 # REMOVE FILES
 sudo rm -rf ~/Downloads/cider-updater
 sudo rm ~/Downloads/cider-updater/cider-*.eopkg

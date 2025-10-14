@@ -41,6 +41,14 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>10-13-2025</Date>
+            <Version>1.288.0</Version>
+            <Comment>Update to 1.288.0</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Update>
+
         <Update release="1">
             <Date>06-17-2025</Date>
             <Version>1.279.0~26201-26201</Version>

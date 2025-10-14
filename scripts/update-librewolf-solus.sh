@@ -27,6 +27,10 @@ chmod +x ep-update.py
 sudo eopkg.py3 bi --ignore-safety pspec.xml
 sudo eopkg it -y ./*.eopkg
 
+# UPDATE PSPEC.XML
+cp pspec.xml $SCRIPTS/../network/web/browser/librewolf/pspec.xml
+echo "REMEMBER TO git add . -> git commit -m 'Updated librewolf' -> git push -u origin master"
+
 # REMOVE FILES
 sudo rm -rf ~/Downloads/librewolf-updater
 sudo rm ~/Downloads/librewolf-updater/librewolf-*.eopkg

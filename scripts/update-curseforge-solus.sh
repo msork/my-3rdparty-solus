@@ -1,5 +1,6 @@
 #!/bin/bash
 # SETUP DIRECTORIES
+SCRIPTS=$PWD
 sudo rm -rf ~/Downloads/curseforge-updater
 mkdir -p ~/Downloads/curseforge-updater
 cd ~/Downloads/curseforge-updater
@@ -23,6 +24,10 @@ chmod +x ep-update.py
 # BUILD AND INSTALL EOPKG
 sudo eopkg.py3 bi --ignore-safety pspec.xml
 sudo eopkg it -y ./*.eopkg
+
+# UPDATE PSPEC.XML
+cp ./pspec.xml $SCRIPTS/../games/curseforge/pspec.xml
+echo "REMEMBER TO git add . -> git commit -m 'Updated curseforge' -> git push -u origin master"
 
 # REMOVE FILES
 sudo rm -rf ~/Downloads/curseforge-updater
