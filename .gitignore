@@ -2,3 +2,4 @@
 *.eopkg
 *.rpm
 *.tar.*
+*.mine.*

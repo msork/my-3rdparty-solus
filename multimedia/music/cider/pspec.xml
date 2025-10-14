@@ -10,7 +10,7 @@
         <Summary>A cross-platform Apple Music experience built on Vue.js and written from the ground up with performance in mind.</Summary>
         <Description>A cross-platform Apple Music experience built on Vue.js and written from the ground up with performance in mind.</Description>
         <License>Copyright (c) 2025 Cider Collective.</License>
-        <Archive sha1sum="edcc77ee83d140e8fe29c4f100acfea151bae7c1" type="binary">https://repo.cider.sh/apt/pool/main/cider-v3.0.0-linux-x64.deb</Archive>
+        <Archive sha1sum="0692aed5c8e6661895f3612cf63da5457c0f877c" type="binary">./cider-v3.1.2-linux-x64.deb</Archive>
 
         <BuildDependencies>
             <Dependency>binutils</Dependency>
