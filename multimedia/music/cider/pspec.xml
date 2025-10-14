@@ -10,7 +10,7 @@
         <Summary>A cross-platform Apple Music experience built on Vue.js and written from the ground up with performance in mind.</Summary>
         <Description>A cross-platform Apple Music experience built on Vue.js and written from the ground up with performance in mind.</Description>
         <License>Copyright (c) 2025 Cider Collective.</License>
-        <Archive sha1sum="0692aed5c8e6661895f3612cf63da5457c0f877c" type="binary">./cider-v3.1.2-linux-x64.deb</Archive>
+        <Archive sha1sum="0692aed5c8e6661895f3612cf63da5457c0f877c" type="binary">https://repo.cider.sh/apt/pool/main/cider-v3.1.2-linux-x64.deb</Archive>
 
         <BuildDependencies>
             <Dependency>binutils</Dependency>
@@ -41,12 +41,22 @@
     </Package>
 
     <History>
+
+        <Update release="2">
+            <Date>10-13-2025</Date>
+            <Version>3.1.2</Version>
+            <Comment>Update to 3.1.2</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Update>
+
         <Update release="1">
             <Date>06-17-2025</Date>
             <Version>3.0.0</Version>
             <Comment>Add cider to repo</Comment>
             <Name>Maxim Sorkin</Name>
-            <Email>msork.uni2004@gmail.com</Email>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
         </Update>
+
     </History>
 </PISI>
