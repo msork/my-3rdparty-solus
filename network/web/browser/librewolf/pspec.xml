@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>librewolf</Name>
+        <Homepage>https://librewolf.net</Homepage>
+        <Packager>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Packager>
+        <Summary>The Librewolf Browser</Summary>
+        <Description> Librewolf is a powerful, extensible web browser with support for modern web application technologies.</Description>
+        <License>MPL 2.0</License>
+        <Archive sha1sum="de4efe32297afe08c27bb5a3f433ff1966e6b493" type="binary">https://repo.librewolf.net/pool/librewolf-143.0.4-1-linux-x86_64-deb.deb</Archive>
+
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>librewolf</Name>
+        <Icon>librewolf</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/librewolf</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+			<Dependency>alsa-lib</Dependency>
+			<Dependency>atkmm</Dependency>
+			<Dependency>glibc</Dependency>
+			<Dependency>cairomm</Dependency>
+			<Dependency>dbus</Dependency>
+			<Dependency>fontconfig</Dependency>
+			<Dependency>freetype2</Dependency>
+			<Dependency>gcc</Dependency>
+			<Dependency>gdk-pixbuf</Dependency>
+			<Dependency>glib2</Dependency>
+			<Dependency>libgtk-3</Dependency>
+			<Dependency>pango</Dependency>
+			<Dependency>libx11</Dependency>
+			<Dependency>libxcb</Dependency>
+			<Dependency>libxcomposite</Dependency>
+			<Dependency>libxcursor</Dependency>
+			<Dependency>libxext</Dependency>
+			<Dependency>libxfixes</Dependency>
+			<Dependency>libxi</Dependency>
+			<Dependency>libxrandr</Dependency>
+			<Dependency>libxrender</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+    </History>
+</PISI>
