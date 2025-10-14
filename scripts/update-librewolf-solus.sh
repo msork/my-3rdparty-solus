@@ -21,12 +21,12 @@ wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/maste
 
 # RUN SCRIPT
 chmod +x ep-update.py
-./ep-update.py $VERSION https://repo.librewolf.net/pool/$FILE
+./ep-update.py $VERSION "https://repo.librewolf.net/pool/$FILE"
 
 # BUILD AND INSTALL EOPKG
 sudo eopkg.py3 bi --ignore-safety pspec.xml
 sudo eopkg it -y ./*.eopkg
 
 # REMOVE FILES
-#sudo rm -rf ~/Downloads/librewolf-updater
-#sudo rm ~/Downloads/librewolf-updater/librewolf-*.eopkg
+sudo rm -rf ~/Downloads/librewolf-updater
+sudo rm ~/Downloads/librewolf-updater/librewolf-*.eopkg
