@@ -28,5 +28,5 @@ sudo eopkg bi --ignore-safety pspec.xml
 sudo eopkg it -y ./*.eopkg
 
 # REMOVE FILES
-sudo rm -rf ~/Downloads/librewolf-updater
-sudo rm ~/Downloads/librewolf-updater/librewolf-*.eopkg
+#sudo rm -rf ~/Downloads/librewolf-updater
+#sudo rm ~/Downloads/librewolf-updater/librewolf-*.eopkg
