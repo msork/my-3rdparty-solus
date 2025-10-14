@@ -57,5 +57,12 @@
     </Package>
 
     <History>
+        <Update release="1">
+            <Date>10-13-2025</Date>
+            <Version>143.0.4</Version>
+            <Comment>Add librewolf to repo</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Update>
     </History>
 </PISI>
