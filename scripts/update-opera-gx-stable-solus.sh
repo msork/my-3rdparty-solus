@@ -39,4 +39,4 @@ sudo rm -rf ~/Downloads/opera-gx-stable-updater
 sudo rm ~/Downloads/opera-gx-stable-updater/opera-gx-stable-*.eopkg
 
 # ECHO REMINDER TO INSTALL FFMPEG
-echo "REMEMBER TO run the update-ffmpeg-chromium-opera-gx.sh script before you install, if you haven't already."
+echo "REMEMBER TO run the update-ffmpeg-chromium-opera-gx-solus.sh script before you install, if you haven't already."
