@@ -42,6 +42,14 @@
 
     <History>
 
+        <Update release="3">
+            <Date>03-23-2026</Date>
+            <Version>3.1.8</Version>
+            <Comment>Update to 3.1.8</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Update>
+
         <Update release="2">
             <Date>10-13-2025</Date>
             <Version>3.1.2</Version>

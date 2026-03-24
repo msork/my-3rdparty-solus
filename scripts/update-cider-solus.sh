@@ -1,6 +1,6 @@
 #!/bin/bash
 # VARIABLES
-FILE="cider-v3.0.0-linux-x64.deb"
+FILE="cider-v3.1.8-linux-x64.deb"
 
 # SETUP DIRECTORIES
 sudo rm -rf ~/Downloads/cider-updater
@@ -8,7 +8,7 @@ mkdir -p ~/Downloads/cider-updater
 cd ~/Downloads/cider-updater
 
 # DOWNLOAD DEB AND EXTRACT VERSION
-wget 'https://repo.cider.sh/apt/pool/main/'$FILE -O $FILE.deb
+wget 'https://repo.cider.sh/apt/pool/main/'$FILE -O $FILE
 ar xf $FILE
 tar --zstd -xvf control.tar.zst
 VERSION=$(sed -n 2p control | grep -Po '(?<=Version: )\S+')
