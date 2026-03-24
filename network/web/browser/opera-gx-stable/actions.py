@@ -9,7 +9,7 @@ IgnoreAutodep = True
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("files/rpm2cpio.sh opera_gx_stable-%s-linux-release-x64-signed.rpm | cpio -idmv" % (get.srcVERSION()))
+    shelltools.system("rpm2cpio opera_gx_stable-%s-linux-release-x64-signed.rpm | cpio -idmv" % (get.srcVERSION()))
 
 def install():
     # root owns sandbox as it is setuid

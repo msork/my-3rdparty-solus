@@ -17,7 +17,6 @@
             <Dependency>libxscrnsaver</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>binutils</Dependency>
-            <Dependency>rpm</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -26,11 +25,9 @@
         <Icon>opera-gx</Icon>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/lib64/opera-gx-stable</Path>
             <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/librewolf</Path>
             <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/mime</Path>
-            <Path fileType="data">/usr/share/pixmaps</Path>
         </Files>
         <RuntimeDependencies>
 			<Dependency>alsa-lib</Dependency>

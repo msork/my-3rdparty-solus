@@ -11,9 +11,7 @@ cd ~/Downloads/opera-gx-stable-updater
 # DOWNLOAD RPM AND EXTRACT IT
 wget 'https://rpm.opera.com/rpm/'$FILE -O $FILE
 wget 'https://deb.opera.com/opera/pool/non-free/o/opera-gx-stable/'$DEBFILE -O $DEBFILE
-wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/network/web/browser/opera-gx-stable/files/rpm2cpio.sh' -O rpm2cpio
-chmod +x ./rmp2cpio
-./rpm2cpio $FILE | cpio -idmv
+rpm2cpio $FILE | cpio -idmv
 
 # DOWNLOAD DEB AND EXTRACT VERSION
 ar -xvf $DEBFILE
@@ -32,12 +30,12 @@ chmod +x ep-update.py
 
 # BUILD AND INSTALL EOPKG
 sudo eopkg.py3 bi --ignore-safety pspec.xml
-#sudo eopkg it -y ./*.eopkg
+sudo eopkg it -y ./*.eopkg
 
 # UPDATE PSPEC.XML
-cp pspec.xml $HOME/pkgs/my-3rdparty-solus/network/web/browser/opera-gx-stable/pspec.xml
+cp pspec.xml $HOME/pkgs/my-3rdparty-solus/network/web/browser/opera-gx-stable/pspec.xml.update
 echo "REMEMBER TO git add . -> git commit -m 'Updated opera-gx-stable' -> git push -u origin master"
 
 # REMOVE FILES
-#sudo rm -rf ~/Downloads/opera-gx-stable-updater
-#sudo rm ~/Downloads/opera-gx-stable-updater/opera-gx-stable-*.eopkg
+sudo rm -rf ~/Downloads/opera-gx-stable-updater
+sudo rm ~/Downloads/opera-gx-stable-updater/opera-gx-stable-*.eopkg
