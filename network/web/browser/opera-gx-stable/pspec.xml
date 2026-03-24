@@ -33,38 +33,46 @@
             <Path fileType="data">/usr/share/pixmaps</Path>
         </Files>
         <RuntimeDependencies>
-			<Dependency>alsa-lib</Dependency>
-			<Dependency>at-spi2</Dependency>
-			<Dependency>cups</Dependency>
-			<Dependency>curl</Dependency>
-			<Dependency>dbus</Dependency>
-			<Dependency>expat</Dependency>
-			<Dependency>ffmpeg-chromium-opera-gx</Dependency>
-			<Dependency>glib2</Dependency>
-			<Dependency>glibc</Dependency>
-			<Dependency>libcairo</Dependency>
-			<Dependency>libgcc</Dependency>
-			<Dependency>libnspr</Dependency>
-			<Dependency>libnss</Dependency>
-			<Dependency>libstdc++</Dependency>
-			<Dependency>libx11</Dependency>
-			<Dependency>libxcb</Dependency>
-			<Dependency>libxcomposite</Dependency>
-			<Dependency>libxdamage</Dependency>
-			<Dependency>libxext</Dependency>
-			<Dependency>libxfixes</Dependency>
-			<Dependency>libxkbcommon</Dependency>
-			<Dependency>libxrandr</Dependency>
-			<Dependency>mesalib</Dependency>
-			<Dependency>pango</Dependency>
-			<Dependency>qt5-base</Dependency>
-			<Dependency>qt6-base</Dependency>
-			<Dependency>qt6-base-gui</Dependency>
-			<Dependency>systemd</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>at-spi2</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>ffmpeg-chromium-opera-gx</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>libcairo</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libnspr</Dependency>
+            <Dependency>libnss</Dependency>
+            <Dependency>libstdc++</Dependency>
+            <Dependency>libx11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libxcomposite</Dependency>
+            <Dependency>libxdamage</Dependency>
+            <Dependency>libxext</Dependency>
+            <Dependency>libxfixes</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>libxrandr</Dependency>
+            <Dependency>mesalib</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt6-base</Dependency>
+            <Dependency>qt6-base-gui</Dependency>
+            <Dependency>systemd</Dependency>
         </RuntimeDependencies>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>03-23-2026</Date>
+            <Version>128.0.5807.97</Version>
+            <Comment>Update to 128.0.5807.97</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Update>
+
         <Update release="1">
             <Date>03-23-2026</Date>
             <Version>128.0.5807.97</Version>
