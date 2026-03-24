@@ -11,7 +11,7 @@ cd ~/Downloads/librewolf-updater
 wget 'https://repo.librewolf.net/pool/'$FILE -O $FILE
 ar xf $FILE
 tar -xvf control.tar.xf
-VERSION=$(sed -n 12p control | grep -Po '(?<=Version: )\d+(?:\.\d+)*' | cut -d'-' -f1)
+VERSION=$(sed -n 2p control | grep -Po '(?<=Version: )\d+(?:\.\d+)*' | cut -d'-' -f1)
 rm debian-binary data.tar.xf control control.tar.xf $FILE
 
 # COPY SCRIPT AND FILES

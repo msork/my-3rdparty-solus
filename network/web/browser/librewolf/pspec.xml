@@ -28,35 +28,44 @@
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/librewolf</Path>
             <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
         <RuntimeDependencies>
             <Dependency>libxscrnsaver</Dependency>
             <Dependency>gconf</Dependency>
-			<Dependency>alsa-lib</Dependency>
-			<Dependency>atkmm</Dependency>
-			<Dependency>glibc</Dependency>
-			<Dependency>cairomm</Dependency>
-			<Dependency>dbus</Dependency>
-			<Dependency>fontconfig</Dependency>
-			<Dependency>freetype2</Dependency>
-			<Dependency>gcc</Dependency>
-			<Dependency>gdk-pixbuf</Dependency>
-			<Dependency>glib2</Dependency>
-			<Dependency>libgtk-3</Dependency>
-			<Dependency>pango</Dependency>
-			<Dependency>libx11</Dependency>
-			<Dependency>libxcb</Dependency>
-			<Dependency>libxcomposite</Dependency>
-			<Dependency>libxcursor</Dependency>
-			<Dependency>libxext</Dependency>
-			<Dependency>libxfixes</Dependency>
-			<Dependency>libxi</Dependency>
-			<Dependency>libxrandr</Dependency>
-			<Dependency>libxrender</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>atkmm</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>cairomm</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>freetype2</Dependency>
+            <Dependency>gcc</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libgtk-3</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libx11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libxcomposite</Dependency>
+            <Dependency>libxcursor</Dependency>
+            <Dependency>libxext</Dependency>
+            <Dependency>libxfixes</Dependency>
+            <Dependency>libxi</Dependency>
+            <Dependency>libxrandr</Dependency>
+            <Dependency>libxrender</Dependency>
         </RuntimeDependencies>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>03-23-2026</Date>
+            <Version>148.0.2</Version>
+            <Comment>Update to 148.0.2</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Update>
+
         <Update release="1">
             <Date>10-13-2025</Date>
             <Version>143.0.4</Version>

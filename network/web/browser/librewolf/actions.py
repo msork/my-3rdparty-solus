@@ -13,7 +13,7 @@ Suffix = "-3"
 def setup():
     shelltools.system("pwd")
     shelltools.system("ar xf librewolf-%s%s-linux-x86_64-deb.deb" % (get.srcVERSION(), Suffix))
-    shelltools.system("tar xvf data.tar.xz")
+    shelltools.system("tar xvf data.tar.gz")
 
 def install():
     pisitools.insinto("/", "usr")
