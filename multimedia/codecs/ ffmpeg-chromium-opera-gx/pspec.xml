@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ffmpeg-chromium-opera-gx</Name>
+        <Homepage>https://chromium.googlesource.com/chromium/third_party/ffmpeg</Homepage>
+        <Packager>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Packager>
+        <Summary>Chromium's ffmpeg for opera-gx-stable.</Summary>
+        <Description> Chromium's ffmpeg for opera-gx-stable with support for proprietary codecs such as H.264 enabled.</Description>
+        <License>Distributable</License>
+        <Archive type="binary" sha1sum="f4e2080f70be7410dee36bcdc5f2ad6aabec6c7e">https://github.com/Ld-Hagen/nwjs-ffmpeg-prebuilt/releases/download/nwjs-ffmpeg-0.107.0/0.107.0-linux-x64.zip</Archive>
+        <Archive type="binary" sha1sum="986510d11770cf8004260f188e3e1b0592558c25">https://www.google.com/dl/release2/chrome_component/accssjtqfpf5qicscrptql4jyyxa_4.10.2934.0/oimompecagnajdejgnnjijobebaeigek_4.10.2934.0_linux_ph722a3wl2goebkpserszm6bde.crx3</Archive>
+
+        <BuildDependencies>
+            <Dependency>curl</Dependency>
+            <Dependency>unzip</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ffmpeg-chromium-opera-gx</Name>
+        <Summary>Chromium's ffmpeg for opera-gx-stable.</Summary>
+        <Description> Chromium's ffmpeg for opera-gx-stable with support for proprietary codecs such as H.264 enabled.</Description>
+        <Files>
+            <Path fileType="library">/usr/lib64/opera-gx-stable/lib_extra/libffmpeg.so</Path>
+            <Path fileType="library">/usr/lib64/opera-gx-stable/lib_extra/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so</Path>
+            <Path fileType="data">/usr/lib64/opera-gx-stable/lib_extra/WidevineCdm/manifest.json</Path>
+            <Path fileType="data">/usr/lib64/opera-gx-stable/resources/widevine_config.json</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>03-23-2026</Date>
+            <Version>107</Version>
+            <Comment>Add ffmpeg-chromium-opera-gx to repo</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Update>
+    </History>
+</PISI>
