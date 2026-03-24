@@ -10,9 +10,9 @@ cd ~/Downloads/librewolf-updater
 # DOWNLOAD DEB AND EXTRACT VERSION
 wget 'https://repo.librewolf.net/pool/'$FILE -O $FILE
 ar xf $FILE
-tar -xvf control.tar.xf
+tar -xvf control.tar.gz
 VERSION=$(sed -n 2p control | grep -Po '(?<=Version: )\d+(?:\.\d+)*' | cut -d'-' -f1)
-rm debian-binary data.tar.xf control control.tar.xf $FILE
+rm debian-binary data.tar.gz control control.tar.gz $FILE
 
 # COPY SCRIPT AND FILES
 wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/scripts/ep-update.py' -O ep-update.py
