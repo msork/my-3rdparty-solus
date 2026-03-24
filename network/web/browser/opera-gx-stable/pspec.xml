@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>opera-gx-stable</Name>
+        <Homepage>https://www.opera.com/gx</Homepage>
+        <Packager>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Packager>
+        <Summary>Fast, secure, easy-to-use web browser</Summary>
+        <Description> Opera GX is the browser built specifically for gamers. Get unparalleled gaming and browsing features, packed in a powerful revolutionary browser.</Description>
+        <License>Distributable</License>
+        <Archive sha1sum="d3850058850afeebe6ffa9294facc980de7b6302" type="binary">https://rpm.opera.com/rpm/opera_gx_stable-128.0.5807.97-linux-release-x64-signed.rpm</Archive>
+
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>opera-gx-stable</Name>
+        <Icon>opera-gx</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/librewolf</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <RuntimeDependencies>
+			<Dependency>alsa-lib</Dependency>
+			<Dependency>at-spi2</Dependency>
+			<Dependency>cups</Dependency>
+			<Dependency>curl</Dependency>
+			<Dependency>dbus</Dependency>
+			<Dependency>expat</Dependency>
+			<Dependency>ffmpeg-chromium-opera-gx</Dependency>
+			<Dependency>glib2</Dependency>
+			<Dependency>glibc</Dependency>
+			<Dependency>libcairo</Dependency>
+			<Dependency>libgcc</Dependency>
+			<Dependency>libnspr</Dependency>
+			<Dependency>libnss</Dependency>
+			<Dependency>libstdc++</Dependency>
+			<Dependency>libx11</Dependency>
+			<Dependency>libxcb</Dependency>
+			<Dependency>libxcomposite</Dependency>
+			<Dependency>libxdamage</Dependency>
+			<Dependency>libxext</Dependency>
+			<Dependency>libxfixes</Dependency>
+			<Dependency>libxkbcommon</Dependency>
+			<Dependency>libxrandr</Dependency>
+			<Dependency>mesalib</Dependency>
+			<Dependency>pango</Dependency>
+			<Dependency>qt5-base</Dependency>
+			<Dependency>qt6-base</Dependency>
+			<Dependency>qt6-base-gui</Dependency>
+			<Dependency>systemd</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>03-23-2026</Date>
+            <Version>128.0.5807.97</Version>
+            <Comment>Add opera-gx-stable to repo</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Update>
+    </History>
+</PISI>
