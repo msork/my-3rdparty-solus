@@ -18,6 +18,7 @@ ar -xvf $DEBFILE
 tar -xvf control.tar.xz
 VERSION=$(sed -n 2p control | grep -Po '(?<=Version: )\d+(?:\.\d+)*' | cut -d' ' -f2)
 rm debian-binary data.tar.xz control control.tar.xz $DEBFILE $FILE
+rm -rf usr
 
 # COPY SCRIPT AND FILES
 wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/scripts/ep-update.py' -O ep-update.py
