@@ -8,7 +8,7 @@ NoStrip = ["/usr"]
 IgnoreAutodep = True
 
 # Should not change.
-Suffix = "-1"
+Suffix = "-3"
 
 def setup():
     shelltools.system("pwd")

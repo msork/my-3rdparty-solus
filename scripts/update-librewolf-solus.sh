@@ -1,6 +1,6 @@
 #!/bin/bash
 # VARIABLES
-FILE="librewolf-143.0.4-1-linux-x86_64-deb.deb"
+FILE="librewolf-148.0.2-3-linux-x86_64-deb.deb"
 
 # SETUP DIRECTORIES
 sudo rm -rf ~/Downloads/librewolf-updater
