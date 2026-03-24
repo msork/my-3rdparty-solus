@@ -30,10 +30,10 @@ chmod +x ep-update.py
 
 # BUILD AND INSTALL EOPKG
 sudo eopkg.py3 bi --ignore-safety pspec.xml
-sudo eopkg it -y ./*.eopkg
+#sudo eopkg it -y ./*.eopkg
 
 # UPDATE PSPEC.XML
-cp pspec.xml $HOME/pkgs/my-3rdparty-solus/network/web/browser/opera-gx-stable/pspec.xml.update
+cp pspec.xml $HOME/pkgs/my-3rdparty-solus/network/web/browser/opera-gx-stable/pspec.xml
 echo "REMEMBER TO git add . -> git commit -m 'Updated opera-gx-stable' -> git push -u origin master"
 
 # REMOVE FILES
