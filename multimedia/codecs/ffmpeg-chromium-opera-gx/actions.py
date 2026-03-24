@@ -10,7 +10,7 @@ IgnoreAutodep = True
 def setup():
     shelltools.system("pwd")
     shelltools.system("unzip 0.%s-linux-x64.zip" % (get.srcVERSION()))
-    shelltools.system("unzip -oj %s_%s_linux_%s.crx3" % (WidevineName, WidevineVersion, WidevineSuffix))
+    shelltools.system("unzip -oj %s_%s_linux_%s.crx3" % (get.srcWIDEVINENAME, get.srcWIDEVINEVERSION, get.srcWIDEVINESUFFIX))
 
     # Create widevine_config.json
     shelltools.system("printf '[\n      {\n         \"preload\": \"/usr/lib64/opera-gx-stable/lib_extra/WidevineCdm\"\n      }\n]\n' > widevine_config.json")
