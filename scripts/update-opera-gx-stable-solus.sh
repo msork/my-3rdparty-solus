@@ -35,8 +35,8 @@ echo "REMEMBER TO git add . -> git commit -m 'Updated opera-gx-stable' -> git pu
 cp ~/Downloads/opera-gx-stable-updater/opera-gx-stable-$VERSION.eopkg ~/Downloads/opera-gx-stable-$VERSION.eopkg
 
 # REMOVE FILES
-#sudo rm -rf ~/Downloads/opera-gx-stable-updater
-#sudo rm ~/Downloads/opera-gx-stable-updater/opera-gx-stable-*.eopkg
+sudo rm -rf ~/Downloads/opera-gx-stable-updater
+sudo rm ~/Downloads/opera-gx-stable-updater/opera-gx-stable-*.eopkg
 
 # ECHO REMINDER TO INSTALL FFMPEG
 echo "REMEMBER TO run the update-ffmpeg-chromium-opera-gx-solus.sh script before you install, if you haven't already."
