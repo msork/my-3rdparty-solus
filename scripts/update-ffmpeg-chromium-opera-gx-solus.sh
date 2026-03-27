@@ -1,6 +1,6 @@
 #!/bin/bash
 # VARIABLES
-VERSION="107.0"
+VERSION="108.0"
 LIBZIP="0.$VERSION-linux-x64.zip"
 WIDEVINECRX="oimompecagnajdejgnnjijobebaeigek_4.10.2934.0_linux_ph722a3wl2goebkpserszm6bde.crx3"
 
