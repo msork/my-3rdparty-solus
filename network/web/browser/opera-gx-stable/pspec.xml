@@ -11,7 +11,7 @@
         <Summary>Fast, secure, easy-to-use web browser</Summary>
         <Description> Opera GX is the browser built specifically for gamers. Get unparalleled gaming and browsing features, packed in a powerful revolutionary browser.</Description>
         <License>Distributable</License>
-        <Archive sha1sum="d3850058850afeebe6ffa9294facc980de7b6302" type="binary">https://rpm.opera.com/rpm/opera_gx_stable-128.0.5807.97-linux-release-x64-signed.rpm</Archive>
+        <Archive sha1sum="a4fcace1bfe4acde7fb3ab049880dcfea92863bc" type="binary">https://rpm.opera.com/rpm/opera_gx_stable-129.0.5823.26-linux-release-x64-signed.rpm</Archive>
 
         <BuildDependencies>
             <Dependency>libxscrnsaver</Dependency>
@@ -65,14 +65,6 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>03-23-2026</Date>
-            <Version>128.0.5807.97</Version>
-            <Comment>Update to 128.0.5807.97</Comment>
-            <Name>Maxim Sorkin</Name>
-            <Email>maximsorkin@cmail.carleton.ca</Email>
-        </Update>
-
         <Update release="1">
             <Date>03-23-2026</Date>
             <Version>128.0.5807.97</Version>
