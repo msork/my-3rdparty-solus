@@ -1,7 +1,7 @@
 #!/bin/bash
 # VARIABLES
-FILE="opera_gx_stable-129.0.5823.26-linux-release-x64-signed.rpm"
-DEBFILE="opera-gx-stable_129.0.5823.26_amd64.deb"
+FILE="opera_gx_stable-130.0.5847.58-linux-release-x64-signed.rpm"
+DEBFILE="opera-gx-stable_130.0.5847.58_amd64.deb"
 
 # SETUP DIRECTORIES
 sudo rm -rf ~/Downloads/opera-gx-stable-updater
