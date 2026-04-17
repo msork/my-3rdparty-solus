@@ -11,7 +11,7 @@
         <Summary>Chromium's ffmpeg for opera-gx-stable.</Summary>
         <Description> Chromium's ffmpeg for opera-gx-stable with support for proprietary codecs such as H.264 enabled.</Description>
         <License>Distributable</License>
-        <Archive type="binary" sha1sum="8d210f32b6e56fccf97cdaf0a1e6fafc775f14b9">https://github.com/Ld-Hagen/nwjs-ffmpeg-prebuilt/releases/download/nwjs-ffmpeg-0.108.0/0.108.0-linux-x64.zip</Archive>
+        <Archive type="binary" sha1sum="a3530e915b004a7e7c432026ee29a5ee7e38a16e">https://github.com/Ld-Hagen/nwjs-ffmpeg-prebuilt/releases/download/nwjs-ffmpeg-0.109.0/0.109.0-linux-x64.zip</Archive>
         <Archive type="binary" sha1sum="986510d11770cf8004260f188e3e1b0592558c25">https://www.google.com/dl/release2/chrome_component/accssjtqfpf5qicscrptql4jyyxa_4.10.2934.0/oimompecagnajdejgnnjijobebaeigek_4.10.2934.0_linux_ph722a3wl2goebkpserszm6bde.crx3</Archive>
 
         <BuildDependencies>
