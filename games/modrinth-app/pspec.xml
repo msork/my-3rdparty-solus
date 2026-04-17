@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>modrinth-app</Name>
+        <Packager>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Packager>
+        <Summary>Modrinth App is a unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in one neat little package.</Summary>
+        <Description>Modrinth App is a unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in one neat little package.</Description>
+        <License>Copyright (c) 2026 Rinth, Inc.</License>
+        <Archive sha1sum="77f69c84c8e0bb7dedb00f90d8baa4704045a798" type="binary">https://launcher-files.modrinth.com/versions/0.13.1/linux/Modrinth%20App_0.13.1_amd64.deb</Archive>
+
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+            <Dependency>libxscrnsaver</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>modrinth-app</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libgtk-3</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libnss</Dependency>
+            <Dependency>libxtst</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>at-spi2</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libwebkit-gtk41</Dependency>
+        </RuntimeDependencies>
+
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>04-17-2026</Date>
+            <Version>0.13.1</Version>
+            <Comment>Add modrinth-app to repo</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
