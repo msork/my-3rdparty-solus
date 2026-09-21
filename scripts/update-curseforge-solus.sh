@@ -22,7 +22,7 @@ chmod +x ep-update.py
 ./ep-update.py $VERSION https://curseforge.overwolf.com/downloads/curseforge-latest-linux.deb
 
 # BUILD AND INSTALL EOPKG
-sudo eopkg.py3 bi --ignore-safety pspec.xml
+sudo eopkg.py bi --ignore-safety pspec.xml
 sudo eopkg it -y ./*.eopkg
 
 # UPDATE PSPEC.XML
