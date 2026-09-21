@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>moonlight-qt</Name>
+        <Packager>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Packager>
+        <Summary>Stream games and other applications from another PC running Sunshine or GeForce Experience</Summary>
+        <Description>Moonlight can stream games and other applications from another PC with Sunshine or GeForce Experience software installed.
+        Features include:
+        
+        * Hardware accelerated video decoding with VAAPI, VDPAU, and NVDEC support
+        * H.264, HEVC, and AV1 codec support
+        * 7.1 surround sound audio support
+        * 10-point multitouch support
+        * Gamepad support with force feedback for up to 16 players
+        * Support for both pointer capture (for games) and direct mouse control (for remote desktop)
+        * Support for passing system-wide keyboard shortcuts like Alt+Tab to the host
+        </Description>
+        <License>GPL-3.0+</License>
+        <Archive sha1sum="0396157cc024d8c9e9aceea7ed47b80b29ba203b" type="binary">https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/Moonlight-6.1.0-x86_64.AppImage</Archive>
+
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+            <Dependency>libxscrnsaver</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>moonlight-qt</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/opt/moonlight-qt</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>qt6-base</Dependency>
+            <Dependency>qt6-declarative</Dependency>
+            <Dependency>qt6-svg</Dependency>
+            <Dependency>sdl2-ttf</Dependency>
+        </RuntimeDependencies>
+
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>09-21-2026</Date>
+            <Version>6.1.0</Version>
+            <Comment>Add moonlight-qt to repo</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
