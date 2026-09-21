@@ -6,11 +6,11 @@ mkdir -p ~/Downloads/modrinth-updater
 cd ~/Downloads/modrinth-updater
 
 # DOWNLOAD DEB AND EXTRACT VERSION
-wget 'https://launcher-files.modrinth.com/versions/0.13.1/linux/Modrinth%20App_0.13.1_amd64.deb' -O ModrinthApp_0.13.1_amd64.deb
-ar xf ModrinthApp_0.13.1_amd64.deb
+wget 'https://launcher-files.modrinth.com/versions/0.21.4/linux/Modrinth%20App_0.21.4_amd64.deb' -O ModrinthApp_0.21.4_amd64.deb
+ar xf ModrinthApp_0.21.4_amd64.deb
 tar zxvf control.tar.gz ./control
 VERSION=$(sed -n 2p control | grep -Po '(?<=Version: )\d+\.\d+\.\d+')
-rm debian-binary data.tar.gz control.tar.gz ModrinthApp_0.13.1_amd64.deb
+rm debian-binary data.tar.gz control.tar.gz ModrinthApp_0.21.4_amd64.deb
 
 # COPY SCRIPT AND FILES
 wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/scripts/ep-update.py' -O ep-update.py
@@ -19,7 +19,7 @@ wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/
 
 # RUN SCRIPT
 chmod +x ep-update.py
-./ep-update.py $VERSION https://launcher-files.modrinth.com/versions/0.13.1/linux/Modrinth%20App_0.13.1_amd64.deb
+./ep-update.py $VERSION https://launcher-files.modrinth.com/versions/0.21.4/linux/Modrinth%20App_0.21.4_amd64.deb
 
 # BUILD AND INSTALL EOPKG
 sudo eopkg.py bi --ignore-safety pspec.xml

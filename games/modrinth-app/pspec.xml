@@ -5,12 +5,12 @@
         <Name>modrinth-app</Name>
         <Packager>
             <Name>Maxim Sorkin</Name>
-            <Email>maximsorkin@cmail.carleton.ca</Email>
+            <Email>msork.uni2004@gmail.com</Email>
         </Packager>
         <Summary>Modrinth App is a unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in one neat little package.</Summary>
         <Description>Modrinth App is a unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in one neat little package.</Description>
         <License>Copyright (c) 2026 Rinth, Inc.</License>
-        <Archive sha1sum="77f69c84c8e0bb7dedb00f90d8baa4704045a798" type="binary">https://launcher-files.modrinth.com/versions/0.13.1/linux/Modrinth%20App_0.13.1_amd64.deb</Archive>
+        <Archive sha1sum="756ab74591fe7616d8271447148cc91afceef450" type="binary">https://launcher-files.modrinth.com/versions/0.21.4/linux/Modrinth%20App_0.21.4_amd64.deb</Archive>
 
         <BuildDependencies>
             <Dependency>binutils</Dependency>
@@ -40,6 +40,14 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>09-21-2026</Date>
+            <Version>0.21.4</Version>
+            <Comment>Update modrinth-app to 0.21.4</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Update>
+        
         <Update release="1">
             <Date>04-17-2026</Date>
             <Version>0.13.1</Version>

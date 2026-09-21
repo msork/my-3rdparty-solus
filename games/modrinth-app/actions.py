@@ -11,7 +11,7 @@ Version = get.srcVERSION()
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf Modrinth App_%s_amd64.deb" % Version)
+    shelltools.system("ar xf Modrinth*_%s_amd64.deb" % Version)
     shelltools.system("tar xf data.tar.gz")
 
 def install():
