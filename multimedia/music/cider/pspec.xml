@@ -5,12 +5,12 @@
         <Name>cider</Name>
         <Packager>
             <Name>Maxim Sorkin</Name>
-            <Email>maximsorkin@cmail.carleton.ca</Email>
+            <Email>msork.uni2004@gmail.com</Email>
         </Packager>
         <Summary>A cross-platform Apple Music experience built on Vue.js and written from the ground up with performance in mind.</Summary>
         <Description>A cross-platform Apple Music experience built on Vue.js and written from the ground up with performance in mind.</Description>
         <License>Copyright (c) 2026 Cider Collective.</License>
-        <Archive sha1sum="bedbe72f060a1adf444aaf84712e47a82035b5dd" type="binary">https://repo.cider.sh/apt/pool/main/cider-v3.1.8-linux-x64.deb</Archive>
+        <Archive sha1sum="233481ea9b654863ddf2dc461132a3d07c02cc34" type="binary">https://repo.cider.sh/apt/pool/main/cider-v4.0.17-linux-x64.deb</Archive>
 
         <BuildDependencies>
             <Dependency>binutils</Dependency>
@@ -24,6 +24,7 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/lib/cider</Path>
             <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/doc/cider</Path>
             <Path fileType="data">/usr/share/lintian/overrides</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
         </Files>
@@ -41,6 +42,14 @@
     </Package>
 
     <History>
+    
+        <Update release="4">
+            <Date>09-21-2026</Date>
+            <Version>4.0.17</Version>
+            <Comment>Update to 4.0.17</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Update>
 
         <Update release="3">
             <Date>03-23-2026</Date>
