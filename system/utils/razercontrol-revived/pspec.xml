@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>razercontrol-revived</Name>
+        <Packager>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Packager>
+        <Summary>Razer Laptop Control - Revived</Summary>
+        <Description>A Linux userspace application to control Razer Blade laptops.
+        No kernel modules (DKMS) required! Features a modern GTK4/libadwaita
+        interface for fan control, power modes, keyboard lighting, and
+        battery health optimization.</Description>
+        <License>GPL-2.0</License>
+        <Archive sha1sum="226e1e7ca7663aa10d75fb43b329d3583f0db37a" type="binary">https://github.com/encomjp/razer-control-revived/releases/download/v0.3.5/razercontrol-revived_0.3.5_amd64.deb</Archive>
+
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>razercontrol-revived</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/etc/udev/rules.d</Path>
+            <Path fileType="data">/usr/lib/systemd/user</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/256x256/apps</Path>
+            <Path fileType="data">/usr/share/razercontrol</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libgtk-4</Dependency>
+            <Dependency>libadwaita</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>hidapi</Dependency>
+        </RuntimeDependencies>
+
+    </Package>
+
+    <History>
+    
+        <Update release="1">
+            <Date>09-21-2026</Date>
+            <Version>0.3.5</Version>
+            <Comment>Add razercontrol-revived to repo</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>maximsorkin@cmail.carleton.ca</Email>
+        </Update>
+
+    </History>
+</PISI>

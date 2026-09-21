@@ -21,7 +21,7 @@ wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/
 
 # RUN SCRIPT
 chmod +x ep-update.py
-./ep-update.py $VERSION https://repo.cider.sh/apt/pool/main/$FILE
+./ep-update.py $VERSION https://repo.cider.sh/apt/pool/main/cider-v$VERSION-linux-x64.deb
 
 # BUILD AND INSTALL EOPKG
 sudo eopkg.py bi --ignore-safety pspec.xml
