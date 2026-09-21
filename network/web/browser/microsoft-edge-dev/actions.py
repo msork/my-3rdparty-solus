@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+# Created For Solus Operating System
+
+from pisi.actionsapi import get, pisitools, shelltools
+
+NoStrip = ["/opt", "/usr"]
+IgnoreAutodep = True
+
+# Should not change.
+Suffix = "-1"
+
+def setup():
+    shelltools.system("pwd")
+    shelltools.system("ar xf microsoft-edge-dev_%s%s_amd64.deb" % (get.srcVERSION(), Suffix))
+    shelltools.system("tar xvf data.tar.xz")
+
+def install():
+    # root owns sandbox as it is setuid
+    shelltools.system("chown root:root opt/microsoft/msedge-dev/msedge-sandbox")
+    # ensure setuid
+    shelltools.system("chmod 4755 opt/microsoft/msedge-dev/msedge-sandbox")
+
+    pisitools.insinto("/", "opt")
+    pisitools.insinto("/", "usr")
+
+    for i in ["16", "24", "32", "48", "64", "128", "256"]:
+        pisitools.insinto("/usr/share/icons/hicolor/%sx%s/apps" % (i,i), "opt/microsoft/msedge-dev/product_logo_%s_dev.png" % i, "microsoft-edge-dev.png")

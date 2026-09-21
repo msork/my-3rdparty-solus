@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>microsoft-edge-beta</Name>
+        <Homepage />
+        <Packager>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Packager>
+        <Summary>The web browser from Microsoft</Summary>
+        <Description> Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
+        <License>EULA</License>
+        <Archive sha1sum="a23d535407c41cc79201738bb5c5031463767f64" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-beta/microsoft-edge-beta_154.0.4258.9-1_amd64.deb</Archive>
+
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>microsoft-edge-beta</Name>
+        <Icon>microsoft-edge-beta</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/appdata</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/gnome-control-center</Path>
+            <Path fileType="executable">/opt/microsoft/msedge-beta</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>09-21-2026</Date>
+            <Version>154.0.4258.9</Version>
+            <Comment>Add microsoft-edge-beta to repositories</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

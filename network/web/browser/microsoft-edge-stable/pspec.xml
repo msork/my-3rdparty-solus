@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>microsoft-edge-stable</Name>
+        <Homepage>https://www.microsoft.com/edge</Homepage>
+        <Packager>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Packager>
+        <Summary>The web browser from Microsoft</Summary>
+        <Description> Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
+        <License>EULA</License>
+        <Archive sha1sum="771697abfea16081e071a7642d79450c2fb9c757" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_153.0.4234.48-1_amd64.deb</Archive>
+
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>microsoft-edge-stable</Name>
+        <Icon>microsoft-edge</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/appdata</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/gnome-control-center</Path>
+            <Path fileType="executable">/opt/microsoft/msedge</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>09-21-2026</Date>
+            <Version>153.0.4234.48</Version>
+            <Comment>Add microsoft-edge-stable to repositories</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
