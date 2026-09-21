@@ -13,9 +13,9 @@ VERSION=$(sed -n 2p control | grep -Po '(?<=Version: )\d+\.\d+\.\d+')
 rm debian-binary data.tar.xz control control.tar.gz curseforge-latest-linux.deb
 
 # COPY SCRIPT AND FILES
-wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/scripts/ep-update.py' -O ep-update.py
-wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/games/curseforge/actions.py' -O actions.py
-wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/games/curseforge/pspec.xml' -O pspec.xml
+wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/scripts/ep-update.py' -O ep-update.py
+wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/games/curseforge/actions.py' -O actions.py
+wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/games/curseforge/pspec.xml' -O pspec.xml
 
 # RUN SCRIPT
 chmod +x ep-update.py
@@ -27,7 +27,7 @@ sudo eopkg it -y ./*.eopkg
 
 # UPDATE PSPEC.XML
 cp ./pspec.xml $SCRIPTS/../games/curseforge/pspec.xml
-echo "REMEMBER TO git add . -> git commit -m 'Updated curseforge' -> git push -u origin master"
+echo "REMEMBER TO git add . -> git commit -m 'Updated curseforge' -> git push -u origin main"
 
 # REMOVE FILES
 sudo rm -rf ~/Downloads/curseforge-updater

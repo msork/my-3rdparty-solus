@@ -13,9 +13,9 @@ VERSION=$(sed -n 2p control | grep -Po '(?<=Version: )\d+\.\d+\.\d+')
 rm debian-binary data.tar.gz control.tar.gz ModrinthApp_0.13.1_amd64.deb
 
 # COPY SCRIPT AND FILES
-wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/scripts/ep-update.py' -O ep-update.py
-wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/games/modrinth-app/actions.py' -O actions.py
-wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/games/modrinth-app/pspec.xml' -O pspec.xml
+wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/scripts/ep-update.py' -O ep-update.py
+wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/games/modrinth-app/actions.py' -O actions.py
+wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/games/modrinth-app/pspec.xml' -O pspec.xml
 
 # RUN SCRIPT
 chmod +x ep-update.py
@@ -27,7 +27,7 @@ sudo eopkg it -y ./*.eopkg
 
 # UPDATE PSPEC.XML
 cp ./pspec.xml $SCRIPTS/../games/modrinth-app/pspec.xml
-echo "REMEMBER TO git add . -> git commit -m 'Updated modrinth-app' -> git push -u origin master"
+echo "REMEMBER TO git add . -> git commit -m 'Updated modrinth-app' -> git push -u origin main"
 
 # REMOVE FILES
 sudo rm -rf ~/Downloads/modrinth-updater

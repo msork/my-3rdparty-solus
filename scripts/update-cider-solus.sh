@@ -1,6 +1,6 @@
 #!/bin/bash
 # VARIABLES
-FILE="cider-v3.1.8-linux-x64.deb"
+FILE="cider-v4.0.17-linux-x64.deb"
 
 # SETUP DIRECTORIES
 sudo rm -rf ~/Downloads/cider-updater
@@ -15,9 +15,9 @@ VERSION=$(sed -n 2p control | grep -Po '(?<=Version: )\S+')
 rm debian-binary data.tar.zst control control.tar.zst $FILE
 
 # COPY SCRIPT AND FILES
-wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/scripts/ep-update.py' -O ep-update.py
-wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/multimedia/music/cider/actions.py' -O actions.py
-wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/master/multimedia/music/cider/pspec.xml' -O pspec.xml
+wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/scripts/ep-update.py' -O ep-update.py
+wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/multimedia/music/cider/actions.py' -O actions.py
+wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/multimedia/music/cider/pspec.xml' -O pspec.xml
 
 # RUN SCRIPT
 chmod +x ep-update.py
@@ -29,7 +29,7 @@ sudo eopkg it -y ./*.eopkg
 
 # UPDATE PSPEC.XML
 cp ./pspec.xml $SCRIPTS/../multimedia/music/cider/pspec.xml
-echo "REMEMBER TO git add . -> git commit -m 'Updated cider' -> git push -u origin master"
+echo "REMEMBER TO git add . -> git commit -m 'Updated cider' -> git push -u origin main"
 
 # REMOVE FILES
 sudo rm -rf ~/Downloads/cider-updater
