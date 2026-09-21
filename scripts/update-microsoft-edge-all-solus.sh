@@ -27,7 +27,7 @@ wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/
 
 	# UPDATE PSPEC.XML
 	cp ./pspec.xml $SCRIPTS/../network/web/browser/microsoft-edge-"$1"/pspec.xml
-	echo "REMEMBER TO git add . -> git commit -m 'Updated microsoft-edge-$1' -> git push -u origin master"
+	echo "REMEMBER TO git add . -> git commit -m 'Updated microsoft-edge-$1' -> git push -u origin main"
 
 	# REMOVE FILES
 	sudo rm -rf ~/Downloads/edge-"$1"-updater

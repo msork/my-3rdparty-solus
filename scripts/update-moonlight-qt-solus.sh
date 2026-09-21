@@ -26,7 +26,7 @@ sudo eopkg it -y ./*.eopkg
 
 # UPDATE PSPEC.XML
 cp ./pspec.xml $ROOT_DIR/games/moonlight-qt/pspec.xml
-echo "REMEMBER TO git add . -> git commit -m 'Updated moonlight-qt' -> git push -u origin master"
+echo "REMEMBER TO git add . -> git commit -m 'Updated moonlight-qt' -> git push -u origin main"
 
 # REMOVE FILES
 sudo rm -rf ~/Downloads/moonlight-updater
