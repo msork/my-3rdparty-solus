@@ -8,9 +8,9 @@ cd ~/Downloads/curseforge-updater
 # DOWNLOAD DEB AND EXTRACT VERSION
 wget 'https://curseforge.overwolf.com/downloads/curseforge-latest-linux.deb' -O curseforge-latest-linux.deb
 ar xf curseforge-latest-linux.deb
-tar zxvf control.tar.gz ./control
+tar xvf control.tar.xz ./control
 VERSION=$(sed -n 2p control | grep -Po '(?<=Version: )\d+\.\d+\.\d+')
-rm debian-binary data.tar.xz control control.tar.gz curseforge-latest-linux.deb
+rm debian-binary data.tar.xz control control.tar.xz curseforge-latest-linux.deb
 
 # COPY SCRIPT AND FILES
 wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/scripts/ep-update.py' -O ep-update.py
