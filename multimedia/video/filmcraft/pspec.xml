@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>filmcraft</Name>
+        <Packager>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Packager>
+        <Summary>Open-source, native video editor: edit video, color and sound.</Summary>
+        <Description>Timeline editing with source and program monitors, color grading and scopes, effects and keyframes, titles and captions, audio mixing with loudness meters, and export; GPU compositing (wgpu). Includes filmcraft-cli, a headless command runner, MCP server and exporter.</Description>
+        <License>Apache-2.0 / MIT</License>
+        <Archive sha1sum="a740df68b91bf1fa3f7c2db135379959913769bd" type="binary">https://github.com/storytold/filmcraft/releases/download/v0.5.0/filmcraft-0.5.0-linux-x86_64.deb</Archive>
+
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>filmcraft</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc/filmcraft</Path>
+            <Path fileType="data">/usr/share/mime/packages</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/metainfo</Path>
+            <Path fileType="data">/usr/share/icons/hicolor</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>glibc</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>vulkan</Dependency>
+            <Dependency>libglvnd</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>libx11</Dependency>
+            <Dependency>libxcursor</Dependency>
+            <Dependency>libxi</Dependency>
+            <Dependency>libxrandr</Dependency>
+            <Dependency>mesalib</Dependency>
+            <Dependency>xdg-desktop-portal</Dependency>
+        </RuntimeDependencies>
+
+    </Package>
+
+    <History>
+    
+        <Update release="1">
+            <Date>09-10-2025</Date>
+            <Version>0.5.0</Version>
+            <Comment>Add filmcraft to repo</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Update>
+
+    </History>
+</PISI>
