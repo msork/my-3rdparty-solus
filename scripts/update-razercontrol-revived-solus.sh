@@ -8,7 +8,7 @@ mkdir -p ~/Downloads/razer-updater
 cd ~/Downloads/razer-updater
 
 # DOWNLOAD DEB AND EXTRACT VERSION
-VERSION=0.3.5
+VERSION=0.3.6
 
 # COPY SCRIPT AND FILES
 wget 'https://raw.githubusercontent.com/msork/my-3rdparty-solus/refs/heads/main/scripts/ep-update.py' -O ep-update.py

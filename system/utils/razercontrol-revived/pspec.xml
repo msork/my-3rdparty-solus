@@ -13,7 +13,7 @@
         interface for fan control, power modes, keyboard lighting, and
         battery health optimization.</Description>
         <License>GPL-2.0</License>
-        <Archive sha1sum="226e1e7ca7663aa10d75fb43b329d3583f0db37a" type="binary">https://github.com/encomjp/razer-control-revived/releases/download/v0.3.5/razercontrol-revived_0.3.5_amd64.deb</Archive>
+        <Archive sha1sum="a3eead58b8c9f434522f8dbadf734aa3a7f894f1" type="binary">https://github.com/encomjp/razer-control-revived/releases/download/v0.3.6/razercontrol-revived_0.3.6_amd64.deb</Archive>
 
         <BuildDependencies>
             <Dependency>binutils</Dependency>
@@ -40,6 +40,14 @@
     </Package>
 
     <History>
+    
+        <Update release="2">
+            <Date>10-09-2026</Date>
+            <Version>0.3.6</Version>
+            <Comment>Update razercontrol-revived to 0.3.6</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Update>
     
         <Update release="1">
             <Date>09-21-2026</Date>
