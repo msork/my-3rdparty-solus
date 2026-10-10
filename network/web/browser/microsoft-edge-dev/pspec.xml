@@ -11,7 +11,7 @@
         <Summary>The web browser from Microsoft</Summary>
         <Description> Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
         <License>EULA</License>
-        <Archive sha1sum="e94756a5e5a37d20400ad353c24920179b5c3e3f" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_155.0.4273.0-1_amd64.deb</Archive>
+        <Archive sha1sum="83e49bc829ea15b4d2a98f65d53744dabcae445e" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_157.0.4322.0-1_amd64.deb</Archive>
 
         <BuildDependencies>
             <Dependency>libxscrnsaver</Dependency>
@@ -40,6 +40,14 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>10-09-2026</Date>
+            <Version>157.0.4322.0</Version>
+            <Comment>Update microsoft-edge-dev to 157.0.4322.0</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Update>        
+        
         <Update release="1">
             <Date>09-21-2026</Date>
             <Version>155.0.4273.0</Version>
