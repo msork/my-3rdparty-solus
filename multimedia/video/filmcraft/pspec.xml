@@ -10,7 +10,7 @@
         <Summary>Open-source, native video editor: edit video, color and sound.</Summary>
         <Description>Timeline editing with source and program monitors, color grading and scopes, effects and keyframes, titles and captions, audio mixing with loudness meters, and export; GPU compositing (wgpu). Includes filmcraft-cli, a headless command runner, MCP server and exporter.</Description>
         <License>Apache-2.0 / MIT</License>
-        <Archive sha1sum="a740df68b91bf1fa3f7c2db135379959913769bd" type="binary">https://github.com/storytold/filmcraft/releases/download/v0.5.0/filmcraft-0.5.0-linux-x86_64.deb</Archive>
+        <Archive sha1sum="16716dc8169aa515264c8f2eed0dbcf1ebb012ca" type="binary">https://github.com/storytold/filmcraft/releases/download/v0.8.0/filmcraft-0.8.0-linux-x86_64.deb</Archive>
 
         <BuildDependencies>
             <Dependency>binutils</Dependency>
@@ -47,8 +47,16 @@
 
     <History>
     
+          <Update release="2">
+            <Date>10-14-2026</Date>
+            <Version>0.8.0</Version>
+            <Comment>Update filmcraft to 0.8.0</Comment>
+            <Name>Maxim Sorkin</Name>
+            <Email>msork.uni2004@gmail.com</Email>
+        </Update>
+    
         <Update release="1">
-            <Date>09-10-2025</Date>
+            <Date>10-10-2026</Date>
             <Version>0.5.0</Version>
             <Comment>Add filmcraft to repo</Comment>
             <Name>Maxim Sorkin</Name>
